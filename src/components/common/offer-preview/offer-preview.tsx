@@ -26,7 +26,7 @@ function OfferPreviewCard({ offer, onMouseOver }: OfferPreviewCardProps) {
     dispatch(postFavoriteAction({ status: Number(!isFavoriteState), id }));
   };
 
-  const ratingStar = (Math.ceil(rating) * 20).toString();
+  const ratingStar = (Math.round(rating) * 20).toString();
 
   return (
     <article

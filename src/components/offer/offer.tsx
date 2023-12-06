@@ -110,7 +110,7 @@ function Offer(): JSX.Element {
                     <span className="visually-hidden">Rating</span>
                   </div>
                   <span className="offer__rating-value rating__value">
-                    {Math.ceil(rating)}
+                    {Math.round(rating)}
                   </span>
                 </div>
                 <ul className="offer__features">
